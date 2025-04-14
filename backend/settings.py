@@ -68,6 +68,7 @@ CORS_ORIGIN_ALLOW_ALL = True  # Voor development alleen
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:4200",
+    "https://backend-03ah.onrender.com"
 ]
 
 REST_FRAMEWORK = {
