@@ -34,8 +34,7 @@ ALLOWED_HOSTS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://backend-03ah.onrender.com',
-    '*'
+    'https://backend-03ah.onrender.com'
 ]
 
 
@@ -84,7 +83,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated',  # Requires auth
+        'rest_framework.permissions.IsAuthenticated',
     ]
 
 }
