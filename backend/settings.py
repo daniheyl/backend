@@ -30,6 +30,11 @@ ALLOWED_HOSTS = [
     "127.0.0.1"
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://backend-03ah.onrender.com',
+    '*'
+]
+
 
 # Application definition
 
