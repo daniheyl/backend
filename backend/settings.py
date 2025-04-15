@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -118,6 +119,10 @@ DATABASES = {
     }
 }
 
+DATABASES['default'] = dj_database_url.parse(
+    "postgresql://todolist_django_render_bb1j_user:DBwaeRSUkfnHO7ExNULtc6NzocwIrwJS@dpg-cvv08bqdbo4c73fajg90-a.frankfurt-postgres.render.com/todolist_django_render_bb1j")
+
+# postgresql://todolist_django_render_bb1j_user:DBwaeRSUkfnHO7ExNULtc6NzocwIrwJS@dpg-cvv08bqdbo4c73fajg90-a.frankfurt-postgres.render.com/todolist_django_render_bb1j
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
